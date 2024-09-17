@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="home-section">
+        <h1>Scooter management</h1>
+        <form class="create-scooter">
+            <input type="text" id="serialNumber" placeholder="enter serialNumber">
+            <input type="text" id="model" placeholder="enter model">
+            <input type="number" id="batteryLevel" placeholder="enter batteryLevel">
+            <input type="text" id="imageUrl" placeholder="enter imageUrl">
+            <input type="text" id="color" placeholder="enter color">
+            <select id="status" required>
+                <option value='available'>available</option>
+                <option value='inRepair'>inRepair</option>
+                <option value='unavailable';>unavailable</option>
+            </select>
+            <button type="submit">Add Scooter</button>
+        </form>
+
+        <H1>Scooter table</H1>
+        <table id="scooter-table">
+            <thead>
+                <tr>
+                    <th><button id="sort-scooter">sort-scooter</button></th>
+                    <th>serialNumber</th>
+                    <th>model</th>
+                    <th>batteryLevel</th>
+                    <th>imageUrl</th>
+                    <th>color</th>
+                    <th>status</th>                 
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+    </section>
+    <section id="edit-section">
+        <form class="edit-scooter">
+            <input type="text" id="serialNumber" placeholder="enter serialNumber">
+            <input type="text" id="model" placeholder="enter model">
+            <input type="number" id="batteryLevel" placeholder="enter batteryLevel">
+            <input type="text" id="imageUrl" placeholder="enter imageUrl">
+            <input type="text" id="color" placeholder="enter color">
+            <select id="status" required>
+                <option value='available'>available</option>
+                <option value='inRepair'>inRepair</option>
+                <option value='unavailable';>unavailable</option>
+            </select>
+            <button type="submit">Add Scooter</button>
+        </form>
+    
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
