@@ -87,11 +87,11 @@ async function RenderTable(){
 
                 const editButton = document.createElement('button')
                 editButton.textContent = 'Edit';
-                // editButton.addEventListener('click', () => editScooter(scooter.serialNumber));
+                editButton.addEventListener('click', () => editScooter(scooter.serialNumber));
 
                 const deleteButton = document.createElement('button');
                 deleteButton.textContent = 'Delete';
-                // deleteButton.addEventListener('click', () => deleteScooter(scooter.serialNumber));
+                deleteButton.addEventListener('click', () => deleteScooter(scooter.serialNumber));
 
                 const actionsCell = document.createElement('td');
                 actionsCell.appendChild(editButton);
