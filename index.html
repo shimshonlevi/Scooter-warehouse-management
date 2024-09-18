@@ -16,6 +16,7 @@
             <input type="text" id="imageUrl" placeholder="enter imageUrl">
             <input type="text" id="color" placeholder="enter color">
             <select id="status" required>
+                <option value="">Select status</option>
                 <option value='available'>available</option>
                 <option value='inRepair'>inRepair</option>
                 <option value='unavailable';>unavailable</option>
@@ -24,16 +25,27 @@
         </form>
 
         <H1>Scooter table</H1>
+
+        <div>
+            <label for="sort-options">Sort by:</label>
+            <select id="sort-options">
+                <option value="model-asc">Model - Ascending</option>
+                <option value="model-desc">Model - Descending</option>
+                <option value="battery-asc">Battery Level - Ascending</option>
+                <option value="battery-desc">Battery Level - Descending</option>
+            </select>
+        </div>
+
         <table id="scooter-table">
             <thead>
                 <tr>
-                    <th><button id="sort-scooter">sort-scooter</button></th>
                     <th>serialNumber</th>
                     <th>model</th>
                     <th>batteryLevel</th>
                     <th>imageUrl</th>
                     <th>color</th>
                     <th>status</th>                 
+                    <th>actions</th>                 
                 </tr>
             </thead>
             <tbody>
@@ -59,6 +71,6 @@
     </section>
 
 
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
